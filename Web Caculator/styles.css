@@ -1,0 +1,45 @@
+body{
+    background-color: gainsboro;
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    color: red;
+}
+
+#tableview{
+    background-color:blueviolet;
+    padding: 8px;
+    margin: auto;
+    border-radius: 5px;
+    height: 340px;
+    width: 300px;
+}
+
+#display{
+    background-color: whitesmoke;
+    color: black;
+    border-color: blueviolet;
+    border-radius: 5px;
+    height: 90%;
+    width: 98%;
+}
+
+input[type=button]{
+    background-color: whitesmoke;
+    color: blueviolet;
+    border: solid black 1px;
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    font-size: large;
+}
+
+input[type=button]:hover{
+    background-color: violet;
+    color: whitesmoke;
+}
