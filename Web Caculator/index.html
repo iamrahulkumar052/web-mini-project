@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Calculator by RahulKumar</title>
+
+    <style>
+        table,td {border: 1px solid black;}  /*to show table layout*/
+    </style>
+
+</head>
+<body>
+    <h1>Web Calculator </h1>
+
+    <p>Simple Web Calculator based on <b>HTML</b>, <b>CSS</b> and <b>JavaScript</b> </p>
+
+    <table>
+        <!--to display values-->
+        <tr>
+            <th colspan="4"> <input type="text" disabled ></th> <!--use colspan to increase the size of 'textbox'-->
+        </tr>
+
+        <!--our calculator's keypad-->
+        <tr>
+            <td> <input type="button" value="C"> </td>
+            <td> <input type="button" value="/"> </td>
+            <td> <input type="button" value="*"> </td>
+            <td> <input type="button" value="-"> </td>
+        </tr>
+
+        <tr>
+            <td> <input type="button" value="7"> </td>
+            <td> <input type="button" value="8"> </td>
+            <td> <input type="button" value="9"> </td>
+            <td rowspan="2"> <input type="button" value="+"> </td> <!--use rowspan to increase the size of '+' button to next row-->
+        </tr>
+
+        <tr>
+            <td> <input type="button" value="4"> </td>
+            <td> <input type="button" value="5"> </td>
+            <td> <input type="button" value="6"> </td>
+        </tr>
+
+        <tr>
+            <td> <input type="button" value="1"> </td>
+            <td> <input type="button" value="2"> </td>
+            <td> <input type="button" value="3"> </td>
+            <td rowspan="2"> <input type="button" value="="> </td>  <!--use rowspan to increase the size of '=' button to next row-->
+        </tr>
+
+        <tr>
+            <td colspan="2"> <input type="button" value="0"> </td> <!--use colspan to increase the size of '=' button to next column-->
+            <td> <input type="button" value="."> </td>
+        </tr>
+
+    </table>
+
+</body>
+</html>
