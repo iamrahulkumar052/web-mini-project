@@ -1,15 +1,9 @@
 body{
     background-color: gainsboro;
-}
-
-h1{
     text-align: center;
 }
 
-p{
-    text-align: center;
-    color: red;
-}
+p{ color: red; }
 
 #tableview{
     background-color:blueviolet;
@@ -20,26 +14,40 @@ p{
     width: 300px;
 }
 
-#display{
+input[type=text]{
     background-color: whitesmoke;
     color: black;
-    border-color: blueviolet;
+    border: solid black 1px;
     border-radius: 5px;
     height: 90%;
     width: 98%;
+    font-size: large;
+    font-weight: bold;
 }
 
 input[type=button]{
     background-color: whitesmoke;
-    color: blueviolet;
+    color: rgba(142, 39, 238, 0.733);
     border: solid black 1px;
     border-radius: 5px;
     height: 100%;
     width: 100%;
     font-size: large;
+    font-weight: bold;
 }
 
 input[type=button]:hover{
-    background-color: violet;
+    background-color: rgba(245, 245, 245, 0.932);
+    color: blueviolet;
+}
+
+#clear:hover{
+    background-color: green;
     color: whitesmoke;
 }
+    
+#enter:hover{
+    background-color: blue;
+    color: whitesmoke;
+}
+    

@@ -6,7 +6,6 @@
     <title>Web Calculator by RahulKumar</title>
 
     <link rel="stylesheet" href="styles.css">  <!--to link css file for styling-->
-
 </head>
 <body>
     <h1>Web Calculator </h1>
@@ -14,43 +13,51 @@
     <p>Simple Web Calculator based on <b>HTML</b>, <b>CSS</b> and <b>JavaScript</b> </p>
 
     <table id="tableview">
-        <!--to display values-->
+
+        <!--use to display values-->
         <tr>
-            <th colspan="4"> <input id="display" type="text" disabled ></th> <!--use colspan to increase the size of 'textbox'-->
+            <th colspan="4"> <input  id="display"  type="text" disabled ></th> <!--use colspan to increase the size of 'textbox'-->
         </tr>
 
         <!--our calculator's keypad-->
+
+        <!--use 'display.value' to show input value in display-->
         <tr>
-            <td> <input type="button" value="C"> </td>
-            <td> <input type="button" value="/"> </td>
-            <td> <input type="button" value="*"> </td>
-            <td> <input type="button" value="-"> </td>
+            <td> <input id="clear" type="button" value="C" onclick="display.value ='' "> </td>  <!-- used for clearing values from display-->
+            <td> <input type="button" value="/" onclick="display.value +='/' "> </td>
+            <td> <input type="button" value="*" onclick="display.value +='*' "> </td> 
+            <td> <input type="button" value="-"  onclick="display.value +='-' "> </td>
         </tr>
 
         <tr>
-            <td> <input type="button" value="7"> </td>
-            <td> <input type="button" value="8"> </td>
-            <td> <input type="button" value="9"> </td>
-            <td rowspan="2"> <input type="button" value="+"> </td> <!--use rowspan to increase the size of '+' button to next row-->
+            <td> <input type="button" value="7" onclick="display.value +='7' "> </td>
+            <td> <input type="button" value="8" onclick="display.value +='8' "> </td>
+            <td> <input type="button" value="9" onclick="display.value +='9' "> </td>
+            <td rowspan="2"> <input type="button" value="+" onclick="display.value +='+' "> </td> <!--use rowspan to increase the size of '+' button to next row-->
         </tr>
 
         <tr>
-            <td> <input type="button" value="4"> </td>
-            <td> <input type="button" value="5"> </td>
-            <td> <input type="button" value="6"> </td>
+            <td> <input type="button" value="4" onclick="display.value +='4' "> </td>
+            <td> <input type="button" value="5" onclick="display.value +='5' "> </td>
+            <td> <input type="button" value="6" onclick="display.value +='6' "> </td>
         </tr>
 
         <tr>
-            <td> <input type="button" value="1"> </td>
-            <td> <input type="button" value="2"> </td>
-            <td> <input type="button" value="3"> </td>
-            <td rowspan="2"> <input type="button" value="="> </td>  <!--use rowspan to increase the size of '=' button to next row-->
+            <td> <input type="button" value="1" onclick="display.value +='1' "> </td>
+            <td> <input type="button" value="2" onclick="display.value +='2' "> </td>
+            <td> <input type="button" value="3" onclick="display.value +='3' "> </td>
+
+            <!-- use 'calculate' function to calculate input values-->
+            <td rowspan="2"> <input id="enter" type="button" value="=" onclick="calculate()"> </td>  <!--use rowspan to increase the size of '=' button to next row-->
         </tr>
 
         <tr>
-            <td colspan="2"> <input type="button" value="0"> </td> <!--use colspan to increase the size of '=' button to next column-->
-            <td> <input type="button" value="."> </td>
+            <td colspan="2"> <input type="button" value="0" onclick="display.value +='0' "> </td> <!--use colspan to increase the size of '=' button to next column-->
+            <td> <input type="button" value="." onclick="display.value +='.' "> </td>
         </tr>
+
+        <script type="text/javascript" src="script.js"></script>  <!-- use 'script' to link script file-->
+
 
     </table>
 
